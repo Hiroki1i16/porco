@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Porco</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="Description" content="">
+<meta property="og:title" content="Porco">
+<meta property="og:description" content="">
+<meta property="og:type" content="Website">
+<meta property="og:url" content="#">
+<meta property="og:site_name" content="Porco">
+<meta property="og:image" content="images/meta/og-image.png">
+<meta name="format-detection" content="telephone=no">
+<link rel="canonical" href="#">
+<link rel="#" href="#">
+<link rel="#" href="#">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">    
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">  
+<link rel="stylesheet" href="css/sanitize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+</head>
+	<body>
+	<div class="wrapper">
+	<!--header-->
+		<header>
+		<div class="header inner">
+          		<div class="flex-header-menu">
+				<div class="flex-header-logo">
+					<img src="../Porco/images/Porcoロゴ.png" alt="ロゴ">
+				</div>
+<!--				<div class="flex-Hamburger">-->
+				<div class="menu">
+					<span class="menu__line menu__line--top"></span>
+					<span class="menu__line menu__line--center"></span>
+					<span class="menu__line menu__line--bottom"></span>
+				</div>
+<!--				</div>-->
+			</div>
+			<nav class="gnav">
+				<div class="gnav__wrap">
+				<ul class="gnav__menu">
+					<li class="gnav__menu__item"><a href="">HOME</a></li>
+					<li class="gnav__menu__item"><a href="">MENU</a></li>
+					<li class="gnav__menu__item"><a href="">CONTACT</a></li>
+					<li class="gnav__menu__item"><a href="tel:03-6277-0659"><span>Tel: 03-6277-0659</span></a></li>
+				</ul>
+				</div>
+				<!--gnav-wrap-->
+				<div class="header-list">
+					<ul>
+						<a href="#"><li>HOME</li></a>
+						<a href="../Porco/menu.html"><li>MENU</li></a>
+						<a href="#"><li>CONTACT</li></a>
+					</ul>
+				</div>
+            </nav>
+
+		</div>
+		</header>
+	<!--// header-->
+	<!--introduction-->
+		<div class="key-visual-menu"><img src="../Porco/images/Our Menus.png"></div>
+		<div class="key-visual-menu-SP"><img src="../Porco/images/Our Menus(SP).png"></div>
+		<div class="inner">
+	<!--Carousel-->
+		<div class="slider">
+			<div>
+				<figure>
+					<img src="../Porco/images/drink.png" alt="">
+				    <p>ウイスキーは150本以上、<br>スピリッツも50種以上常に在庫</p>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="../Porco/images/pasta.png" alt="">
+				    <p>本日のパスタ</p>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="../Porco/images/curry.png" alt="">
+				    <p>本日のカレー</p>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="../Porco/images/roastbeef.png" alt="">
+					<p>ローストビーフ</p>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="../Porco/images/chicken.png" alt="">
+					<p>ロティサリーチキン</p>
+				</figure>
+			</div>
+			<div>
+				<figure>
+					<img src="../Porco/images/course.png" alt="">
+					<p>料理6〜8品、150分飲み放題<br>ポルココース（5,000円）</p>
+				</figure>
+			</div>
+　 　　　</div>
+　　　<!--Carousel-->
+	<div class="flex-button">
+		<p><a href="#" class="btn-flat-border">MENU List</a></p>
+	</div>
+	
+	</div>
+	<!--footer-->
+	<small>Copyright &copy; Daining Bar Porco. All Rights Reserved.</small>
+	<!--//footer-->
+   </div>
+		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('.slider').slick({
+			accessibility: true,
+			arrows: true,
+			dots: true,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			slidesToShow: 3,
+			responsive: [
+			{
+			  breakpoint: 1024,     // 600〜1023px
+			  settings: {
+				slidesToShow: 3,
+				slidesToScroll: 1,
+				infinite: true,
+				dots: true
+			  }
+			},
+			{
+			  breakpoint: 600,      // 480〜599px
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1
+			  }
+			},
+			{
+			  breakpoint: 480,      // 〜479px
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		  ],
+		}); 
+	});
+</script>
+<script>
+	$('.menu').on('click',function(){
+    $('.menu__line').toggleClass('active');
+    $('.gnav').fadeToggle();
+	});
+</script>
+</body>
+</html>
